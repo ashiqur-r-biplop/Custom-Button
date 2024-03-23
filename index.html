@@ -6,38 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button with Hover Effect</title>
     <style>
-        button {
+        .subscribe-btn {
             background-color: rgb(0, 0, 0);
             color: rgb(255, 0, 0);
-            padding: 10px 35px 10px 20px;
+            padding: 8px 40px 10px 20px;
             position: relative;
             margin: 0px;
             border: none;
-            border-radius: 10px 10px 10px 10px;
+            border-radius: 15px;
+            cursor: pointer;
         }
 
-        button::before {
-            content: "Hover Me";
+        .subscribe-btn::before {
+            content: "Subscribe";
             position: absolute;
             top: -5px;
-            padding: 0px 10px;
             left: 0px;
             height: 100%;
             box-sizing: border-box;
+            font-weight: 800;
             width: 100%;
-            background-color: red;
-            color: rgb(255, 240, 240);
+            background-color: #f10041;
+            color: black;
             z-index: 99;
             transition: top .3s cubic-bezier(.5, 2.5, .7, .7), box-shadow .3s cubic-bezier(.5, 2.5, .7, .7);
-            border-radius: 10px 10px 10px 10px;
-            padding: 10px 35px 10px 20px;
-            /* display: flex;
-            justify-content: center;
-            align-items: center; */
-
+            border-radius: 15px;
+            padding: 7px 40px 10px 20px;
+            cursor: pointer;
         }
 
-        button::after {
+        .subscribe-btn::after {
             content: "";
             position: absolute;
             top: -5px;
@@ -51,10 +49,67 @@
             transition: top .3s cubic-bezier(.5, 2.5, .7, .7), box-shadow .3s cubic-bezier(.5, 2.5, .7, .7);
 
         }
-        button:hover::after{
+
+        .subscribe-btn:hover::after {
+            top: -1.9px;
+        }
+
+        .subscribe-btn:hover::before {
             top: -2px;
         }
-        button:hover::before {
+
+        /* Explore-courses-btn */
+        .Explore-courses-btn {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 0, 0);
+            padding: 8px 45px 10px 20px;
+            position: relative;
+            margin: 0px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .Explore-courses-btn::before {
+            content: "Explore courses";
+            position: absolute;
+            top: -5px;
+            right: 0px;
+            height: 100%;
+            box-sizing: border-box;
+            font-weight: 800;
+            width: 100%;
+            background-color: #f10041;
+            color: black;
+            z-index: 99;
+            transition: top .3s cubic-bezier(.5, 2.5, .7, .7), box-shadow .3s cubic-bezier(.5, 2.5, .7, .7);
+            border-radius: 15px;
+            padding: 7px 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: start;
+        }
+
+        .Explore-courses-btn::after {
+            content: "";
+            position: absolute;
+            top: -5px;
+            right: 12px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxMiAxMicgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNOS4yMDc2MSAxMS4wMjU4TDExLjM2NzUgMTEuMDI1OEwxMS4zNjc1IDAuOTc5NTYzTDEuMTIyNSAwLjk3OTU2M0wxLjEyMjUgMy4wOTc1Nkw3LjY4MDEgMy4wOTc1NkwwLjM1ODc0NiAxMC4yNzY5TDEuODg2MjYgMTEuNzc0N0w5LjIwNzYxIDQuNTk1NDNMOS4yMDc2MSAxMS4wMjU4WicgZmlsbD0nd2hpdGUnLz48L3N2Zz4=);
+            background-position: right;
+            background-repeat: no-repeat;
+            transition: top .3s cubic-bezier(.5, 2.5, .7, .7), box-shadow .3s cubic-bezier(.5, 2.5, .7, .7);
+
+        }
+
+        .Explore-courses-btn:hover::after {
+            top: -1.9px;
+        }
+
+        .Explore-courses-btn:hover::before {
             top: -2px;
         }
     </style>
@@ -63,7 +118,8 @@
 <body>
 
     <div>
-        <button>Hover Me</button>
+        <button class="subscribe-btn">Subscribe</button>
+        <button class="Explore-courses-btn">Explore courses</button>
     </div>
 
 </body>
