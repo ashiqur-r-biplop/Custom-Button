@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button with Hover Effect</title>
     <style>
-        .subscribe-btn {
+        /* .subscribe-btn {
             background-color: rgb(0, 0, 0);
             color: rgb(255, 0, 0);
             padding: 8px 40px 10px 20px;
@@ -59,7 +59,7 @@
         }
 
         /*#id-6Z-Yk9nVN-38 */
-        #id-6Z-Yk9nVN-38 {
+        /* #id-6Z-Yk9nVN-38 {
             background-color: rgb(0, 0, 0);
             color: rgb(255, 0, 0);
             padding: 8px 45px 10px 20px;
@@ -181,6 +181,72 @@
             #id-6Z-Yk9nVN-38:hover::before {
                 top: -2px;
             }
+        }  */
+        #id-6Z-Wr7N6y-16 {
+            font-size: 18px;
+            background-color: rgb(0, 0, 0);
+            color: #ffbf14;
+            padding: 0px 35px 10px 20px;
+            position: relative;
+            margin: 0px;
+            border: none;
+            border-radius: 10px 10px 10px 10px;
+            z-index: 99999;
+            top: 5px;
+            transition: padding .3s cubic-bezier(.5, 2.5, .7, .7), box-shadow .3s cubic-bezier(.5, 2.5, .7, .7);
+
+        }
+
+        #id-6Z-Wr7N6y-16:hover {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .elPageContent [data-style-guide-button="style1"] {
+            border-width: 0px
+        }
+
+        /* #id-6Z-Wr7N6y-16::before {
+            content: "Subscribe";
+            position: absolute;
+            top: -5px;
+            padding: 0px 10px;
+            left: 0px;
+            height: 100%;
+            box-sizing: border-box;
+            width: 100%;
+            z-index: 9999999999999999;
+            background-color: #FFBF14;
+            color: #000;
+            transition: top .3s cubic-bezier(.5, 2.5, .7, .7), box-shadow .3s cubic-bezier(.5, 2.5, .7, .7);
+            border-radius: 10px 10px 10px 10px;
+            padding: 10px 35px 10px 20px;
+
+        }  */
+
+
+        #id-6Z-Wr7N6y-16::after {
+            content: "";
+            position: absolute;
+            top: -5px;
+            right: 20px;
+            width: 15px;
+            height: 100%;
+            z-index: 9999999999999999;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxMiAxMicgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNOS4yMDc2MSAxMS4wMjU4TDExLjM2NzUgMTEuMDI1OEwxMS4zNjc1IDAuOTc5NTYzTDEuMTIyNSAwLjk3OTU2M0wxLjEyMjUgMy4wOTc1Nkw3LjY4MDEgMy4wOTc1NkwwLjM1ODc0NiAxMC4yNzY5TDEuODg2MjYgMTEuNzc0N0w5LjIwNzYxIDQuNTk1NDNMOS4yMDc2MSAxMS4wMjU4WicgZmlsbD0nd2hpdGUnLz48L3N2Zz4=);
+            background-position: right;
+            background-repeat: no-repeat;
+            transition: top .3s cubic-bezier(.5, 2.5, .7, .7), box-shadow .3s cubic-bezier(.5, 2.5, .7, .7);
+
+        }
+
+        #id-6Z-Wr7N6y-16:hover::after {
+            top: -2px;
+
+        }
+
+        #id-6Z-Wr7N6y-16:hover::before {
+            top: -2px;
         }
     </style>
 </head>
@@ -189,7 +255,7 @@
 
     <div>
         <!-- <button class="subscribe-btn">Subscribe</button> -->
-        <button id="id-6Z-Yk9nVN-38">Explore our 3-Step Hiring Blueprint</button>
+        <button id="id-6Z-Wr7N6y-16">Subscribe</button>
     </div>
 
 </body>
